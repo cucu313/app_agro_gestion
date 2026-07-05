@@ -111,5 +111,5 @@ referencia:
 - Toda la base de datos vive en el dispositivo (`sqflite`), no hay ninguna
   llamada de red en el código.
 - La arquitectura está pensada para un solo usuario: no hay lógica de
-  autenticación ni sincronización, tal como pediste.
+  autenticación ni sincronización.
 - El código está comentado en español, siguiendo el idioma del proyecto.

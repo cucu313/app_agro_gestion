@@ -1,0 +1,60 @@
+name: agro_app
+description: Aplicación de gestión agropecuaria para iPad (offline, SQLite local)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Base de datos local
+  sqflite: ^2.3.3+1
+  sqflite_common_ffi: ^2.3.4 # permite usar sqflite en Windows/Linux de escritorio (solo para previsualizar; en el iPad real se usa sqflite normal)
+  path: ^1.9.0
+  path_provider: ^2.1.3
+
+  # Estado
+  provider: ^6.1.2
+
+  # Gráficos
+  fl_chart: ^0.68.0
+
+  # Calendario
+  table_calendar: ^3.1.2
+
+  # Fechas / formato / moneda
+  intl: ^0.19.0
+
+  # Notificaciones locales
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+
+  # Selección e inclusión de imágenes
+  image_picker: ^1.1.2
+
+  # Exportación
+  pdf: ^3.11.0
+  printing: ^5.13.1
+  excel: ^4.0.6
+
+  # Compartir / archivos
+  share_plus: ^9.0.0
+  file_picker: ^8.0.6
+
+  # Iconografía moderna
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
